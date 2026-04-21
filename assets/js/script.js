@@ -170,8 +170,7 @@ export function renderFlashcard() {
                         <div class="ipa-text">/${item.ipa}/</div>
                     </div>
                     <div class="card-face card-back" onclick="event.stopPropagation()">
-                        <p style="font-weight: 500; margin-bottom: 10px; cursor: pointer;" 
-                           onclick="window.speakWord('${item.word}')">
+                        <p style="font-weight: 500; margin-bottom: 20px; cursor: pointer;" onclick="window.speakWord('${item.word}')">
                             ${item.meaning}
                         </p>
                         <input type="text" id="fc-input" placeholder="Gõ từ..." onkeydown="window.handleEnter(event)" autocomplete="off">
@@ -179,8 +178,13 @@ export function renderFlashcard() {
                     </div>
                 </div>
             </div>`;
+        
         window.speakWord(item.word);
-        setTimeout(() => document.getElementById('fc-input')?.focus(), 300);
+        
+       setTimeout(() => {
+            const input = document.getElementById('fc-input');
+            if (input) input.focus();
+        }, 300);
     }
 }
 
