@@ -379,3 +379,11 @@ input::placeholder { color: rgba(255,255,255,0.4); font-weight: 400; }
 .back-btn-styled:active {
     transform: translateY(0);
 }
+.word-text, .card-back p {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.word-text:hover, .card-back p:hover {
+    opacity: 0.8;
+}
