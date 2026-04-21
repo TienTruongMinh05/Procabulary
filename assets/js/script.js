@@ -165,13 +165,13 @@ export function renderFlashcard() {
                 <div class="flashcard-inner">
                     <div class="card-face">
                         <div class="word-text" onclick="event.stopPropagation(); window.speakWord('${item.word}')">
-                            ${item.word}
+                            <span class="speak-icon">🔊</span> ${item.word}
                         </div>
                         <div class="ipa-text">/${item.ipa}/</div>
                     </div>
                     <div class="card-face card-back" onclick="event.stopPropagation()">
                         <p style="font-weight: 500; margin-bottom: 20px; cursor: pointer;" onclick="window.speakWord('${item.word}')">
-                            ${item.meaning}
+                            <span style="font-size: 1.2rem;">📢</span> ${item.meaning}
                         </p>
                         <input type="text" id="fc-input" placeholder="Gõ từ..." onkeydown="window.handleEnter(event)" autocomplete="off">
                         <div id="fc-error" style="margin-top:12px; min-height: 24px;"></div>
