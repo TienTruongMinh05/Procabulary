@@ -160,7 +160,6 @@ export function renderFlashcard() {
             if (State.currentIdx < State.sessionWords.length) renderFlashcard(); else finish(); 
         }, 3000);
     } else {
-        container.innerHTML = `
            container.innerHTML = `
             <div class="flashcard" id="fc" onclick="window.toggleFlip()">
                 <div class="flashcard-inner">
