@@ -387,3 +387,10 @@ input::placeholder { color: rgba(255,255,255,0.4); font-weight: 400; }
 .word-text:hover, .card-back p:hover {
     opacity: 0.8;
 }
+.speak-icon {
+    transition: transform 0.2s ease;
+}
+
+.word-text:hover .speak-icon {
+    transform: scale(1.2);
+}
