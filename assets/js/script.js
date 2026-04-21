@@ -161,11 +161,20 @@ export function renderFlashcard() {
         }, 3000);
     } else {
         container.innerHTML = `
+           container.innerHTML = `
             <div class="flashcard" id="fc" onclick="window.toggleFlip()">
                 <div class="flashcard-inner">
-                    <div class="card-face"><div class="word-text">${item.word}</div><div class="ipa-text">/${item.ipa}/</div></div>
+                    <div class="card-face">
+                        <div class="word-text" onclick="event.stopPropagation(); window.speakWord('${item.word}')">
+                            ${item.word}
+                        </div>
+                        <div class="ipa-text">/${item.ipa}/</div>
+                    </div>
                     <div class="card-face card-back" onclick="event.stopPropagation()">
-                        <p style="font-weight: 500; margin-bottom: 10px;">${item.meaning}</p>
+                        <p style="font-weight: 500; margin-bottom: 10px; cursor: pointer;" 
+                           onclick="window.speakWord('${item.word}')">
+                            ${item.meaning}
+                        </p>
                         <input type="text" id="fc-input" placeholder="Gõ từ..." onkeydown="window.handleEnter(event)" autocomplete="off">
                         <div id="fc-error" style="margin-top:12px; min-height: 24px;"></div>
                     </div>
