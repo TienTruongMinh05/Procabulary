@@ -207,7 +207,7 @@
     const loginBtn = document.getElementById('login-btn');
     const userInfo = document.getElementById('user-info');
     const userName = document.getElementById('user-name');
-    const userAvatar = document.getElementById('user-avatar'); // Lấy element ảnh
+    const userAvatar = document.getElementById('user-avatar'); 
     const coursesSection = document.getElementById('courses-container');
 
     if (user) {
@@ -215,7 +215,7 @@
         userInfo.classList.remove('hidden');
         
         userName.innerText = user.displayName; 
-        userAvatar.src = user.photoURL || 'https://via.placeholder.com/35'; // Hiện ảnh từ Google hoặc ảnh mặc định
+        userAvatar.src = user.photoURL || 'https://via.placeholder.com/35'
         
         if (coursesSection) coursesSection.classList.remove('hidden');
     } else {
