@@ -185,7 +185,7 @@ body.dark-mode ::-webkit-scrollbar-thumb { background: var(--border); border-rad
 
 .diff-correct { color: #ffffff; } 
 .diff-wrong {color: #ff4d4d; font-weight: bold;} 
-.diff-missing {color: #ffcc00; border-bottom: 2px solid #ffcc00;}
+.diff-missing {color: #ffcc00; border-bottom: 2px solid #ffcc00; margin: 0 1px;}
 .diff-extra { color: #cbd5e1; opacity: 0.6; }
 .diff-transposed { color: #c084fc; border-bottom: 2px solid #c084fc; }
 
