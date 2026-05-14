@@ -250,7 +250,7 @@ function renderInputFeedback(diffMap, targetEl, accuracy) {
         const span = document.createElement('span');
         span.className = `diff-char diff-${item.type}`;
         
-        span.innerText = (item.type === 'missing') ? item.expected : item.char;
+        span.innerText = (item.type === 'missing') ? '_' : item.char;
         
         if (item.char !== '' || item.type === 'missing') {
             span.setAttribute('data-label', item.label);
