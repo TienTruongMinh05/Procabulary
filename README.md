@@ -1,6 +1,6 @@
 Procabulary Engine V2.2
 
-Procabulary Engine V2.2 is a professional, commercial-grade English flashcard platform designed to optimize vocabulary retention. It combines modern web technologies with advanced linguistic analysis algorithms to help learners master academic English for IELTS, IT, and Business through a highly personalized learning path.  
+Procabulary Engine V2.2 is a English flashcard platform designed to optimize vocabulary retention. It combines modern web technologies with advanced linguistic analysis algorithms to help learners master academic English for IELTS, IT, and Business through a highly personalized learning path.  
 
 Core Features
 
@@ -39,5 +39,3 @@ Implementation of Spaced Repetition System (SRS) algorithms (like SM-2) for opti
 Integration with Generative AI for automated sentence examples and contextual explanations.
 Transitioning to a Progressive Web App (PWA) for offline learning capabilities.
 
-Developed by: Truong Minh Tien
-Project: Procabulary Engine V2.2 (2026)
